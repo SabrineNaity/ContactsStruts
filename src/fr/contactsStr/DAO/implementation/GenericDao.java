@@ -99,26 +99,34 @@ public class GenericDao {
 	}
 	
 	public String[] findById(String table,String[] fields, String id) {
-		
-		try {
-		connexion();
-		String sql = "SELECT * FROM " + table+" WHERE id ="+id+";";
-		System.out.println(sql);
-		ResultSet res = stmt.executeQuery(sql);
-		String[] result=null;
-		while (res.next()) {
-			int resLength = res.getMetaData().getColumnCount();
-			 result = new String[resLength];
-			for (int i = 0; i < result.length; i++) {
-				result[i] = res.getString(fields[i]);
-			}
+		List<String[]> res =findByAttribute(table,fields,"id",id);
+		if (res.size()>=0){
+			return res.get(0);
 		}
-		return result;//mauvais type de retour :: le res attendu est un contact dans MoveContactAction	
+		return null;
+	}
+
+	public List<String[]> findByAttribute(String table,String[] fields, String attributeName, String attributeValue) {
+		List<String[]> results = new ArrayList<String[]>();
+		try {
+			connexion();
+			String sql = "SELECT * FROM " + table+" WHERE " + attributeName +" ="+attributeValue+";";
+			System.out.println(sql);
+			ResultSet res = stmt.executeQuery(sql);
+			while (res.next()) {
+				String[] result = new String[fields.length];
+				for (int i = 0; i < result.length; i++) {
+					result[i] = res.getString(fields[i]);
+				}
+				results.add(result);
+			}
+			return results;
 		}catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
+
 
 	private String toSqlFields(String[] fields) {
 		StringBuffer sb = new StringBuffer();

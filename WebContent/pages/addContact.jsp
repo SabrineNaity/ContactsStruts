@@ -13,16 +13,17 @@
 <body>
 <h1> Page de Création de contact</h1>
 <div class="container">
-  <html:form action="/AddContact" >
+  <html:form action="/addContact" >
 	<html:errors/>
     <p><label for="lastName">Nom</label>
     <html:text property="lastName" styleId="lastName"/></p>
 
-    <p><label for="prenom">Prénom</label>
+    <p><label for="firstName">Prénom</label>
     <html:text property="firstName" styleId="firstName"/></p>
 	
 	<p><label for="email">email</label>
     <html:text property="email" styleId="email"/></p>
+
 
 	
 

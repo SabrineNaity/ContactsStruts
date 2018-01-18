@@ -9,9 +9,7 @@
 </head>
 <body>
 <h1><bean:message key="label.hello"/></h1>
-<p> <a href="addContact.do"><bean:message key="label.creation"/></a> </p>
-<p> <a href="readContact.do"><bean:message key="label.consultation"/> </p>
-<p> <a href="goToGroupCreation.do"><bean:message key="label.addGroup"/></a> </p>
-<p> <a href="readGroup.do"><bean:message key="label.readGroup"/> </a></p>
+<p> <a href="goToContactsManagement.do"><bean:message key="label.contactGestion"/></a> </p>
+<p> <a href="goToGroupsManagement.do"><bean:message key="label.groupGestion"/> </p>
 </body>
 </html>

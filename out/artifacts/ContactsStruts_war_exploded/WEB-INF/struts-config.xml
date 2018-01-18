@@ -17,11 +17,18 @@
 		<form-bean name="UpdateContactValidationForm"
 		type="fr.contactsStr.actionForm.UpdateContactValidationForm"/>
 		
-		<form-bean name="AddGroupForm"
-		type="fr.contactsStr.actionForm.AddGroupForm"/>
-	
-		
-  	</form-beans>
+		<form-bean name="AddGroupValidationForm"
+		type="fr.contactsStr.actionForm.AddGroupValidationForm"/>
+
+		<form-bean name="ReadPhoneNumberValidationForm"
+				   type="fr.contactsStr.actionForm.ReadPhoneNumberValidationForm"/>
+		<form-bean name="AddPhoneNumberValidationForm"
+				   type="fr.contactsStr.actionForm.AddPhoneNumberValidationForm"/>
+
+
+
+
+	</form-beans>
   
   
 		
@@ -29,36 +36,59 @@
 	<action-mappings>
 	
 		<!-- ========== Contact =========================== -->
-		<action path="/AddContact"
+		<action path="/addContact"
 			type="fr.contactsStr.servletAction.AddContactAction"
 			name="AddContactValidationForm" scope="request"
 			input="/pages/addContact.jsp">
-			<forward name="success" path="/pages/success.jsp"/>
+			<forward name="success" path="/readContact.do"/>
 			<forward name="error" path="/pages/error.jsp"/>
 		</action>
-		
+
+		<action path="/goToContactsManagement" forward="/pages/contactsManagement.jsp"/>
+
+
+		<action path="/goToContactsCreation" forward="/pages/addContact.jsp"/>
+
+
 		<action path="/readContact"
 			type="fr.contactsStr.servletAction.ReadContactAction">
 			<forward name="success" path="/pages/readContact.jsp"/>
 		</action>
 		
-		<action path="/MoveContact"
+		<action path="/moveContact"
 			type="fr.contactsStr.servletAction.MoveContactAction">
 			<forward name="success" path="/pages/updateContact.jsp"/>
 		</action>
 		
-		<action path="/DeleteContact"
+		<action path="/pages/deleteContact"
 			type="fr.contactsStr.servletAction.DeleteContactAction">
-			<forward name="success" path="/pages/success.jsp"/>
+			<forward name="success" path="/readContact.do"/>
 			<forward name="error" path="/pages/error.jsp"/>
 		</action>
 		
-		<action path="/UpdateContact"
+		<action path="/pages/updateContact"
 			type="fr.contactsStr.servletAction.UpdateContactAction"
 			name="UpdateContactValidationForm"
 			scope="request">
-			<forward name="success" path="/pages/readContact.jsp"/>
+			<forward name="success" path="/readContact.do"/>
 			<forward name="error" path="/pages/error.jsp"/>
+		</action>
+
+		<action path="/pages/goToPhoneNumbersCreation" forward="/pages/addPhoneNumber.jsp"/>
+
+		<action path="/pages/addPhoneNumber"
+				type="fr.contactsStr.servletAction.AddPhoneNumberAction"
+				name="AddPhoneNumberValidationForm" scope="request"
+				input="/pages/addPhoneNumber.jsp">
+			<forward name="success" path="/pages/readPhoneNumber.do"/>
+			<forward name="error" path="/pages/error.jsp"/>
+		</action>
+
+		<action path="/pages/readPhoneNumber"
+				type="fr.contactsStr.servletAction.ReadPhoneNumberAction"
+				name="ReadPhoneNumberValidationForm" scope="request"
+				input="/pages/readContact.jsp">
+			<forward name="success"  path="/pages/readPhoneNumber.jsp"/>
 		</action>
 	
 	
@@ -67,25 +97,52 @@
 			name="LoginValidationForm"
 		 	forward="/pages/index.jsp"/>
 		 	
-		 	<action path="/addContact" forward="/pages/addContact.jsp"/>
-		 	
+
 		 	
 		 	<!-- ========== Groupe =========================== -->
 		 	<action path="/goToGroupCreation" forward="/pages/addGroup.jsp">
 			<forward name="success" path="/pages/readContact.jsp"/>
-			</action>				
+			</action>
+
+			<action path="/goToGroupsManagement" forward="/pages/groupsManagement.jsp"/>
+
 			
-		 	<action path="/AddGroup" 
+		 	<action path="/addGroup"
 				type="fr.contactsStr.servletAction.AddGroupAction"
-				name="AddGroupForm" scope="request" 				
+				name="AddGroupValidationForm" scope="request"
 				input="/pages/addGroup.jsp">
-				<forward name="success" path="pages/success.jsp" />
+				<forward name="success" path="/readGroup.do" />
 				<forward name="error" path="pages/error.jsp" />
 			</action>
-		 	
-	</action-mappings>
-	
-	
-	
-	<message-resources parameter="Resources" />
+
+		<action path="/readGroup"
+				type="fr.contactsStr.servletAction.ReadGroupAction">
+			<forward name="success" path="/pages/readGroup.jsp"/>
+		</action>
+
+		<!--<action path="/MoveContact"
+            type="fr.contactsStr.servletAction.MoveContactAction">
+        <forward name="success" path="/pages/updateContact.jsp"/>
+    </action>
+
+    <action path="/pages/deleteContact"
+            type="fr.contactsStr.servletAction.DeleteContactAction">
+        <forward name="success" path="/readContact.do"/>
+        <forward name="error" path="/pages/error.jsp"/>
+    </action>
+
+    <action path="pages/updateContact"
+            type="fr.contactsStr.servletAction.UpdateContactAction"
+            name="UpdateContactValidationForm"
+            scope="request">
+        <forward name="success" path="/readContact.do"/>
+        <forward name="error" path="/pages/error.jsp"/>
+    </action>
+    -->
+
+</action-mappings>
+
+
+
+<message-resources parameter="Resources" />
 </struts-config>

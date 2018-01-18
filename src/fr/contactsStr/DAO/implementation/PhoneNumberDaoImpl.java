@@ -9,17 +9,22 @@ import fr.contactsStr.domain.PhoneNumber;
 
 public class PhoneNumberDaoImpl implements PhoneNumberDao {
 
-	String[] fields = { "phoneKind", "phoneNumber", "contactId"};
-	private final static String TABLE = "PhoneNumber";
+	String[] fields = { "phoneKind", "phoneNumber", "contact"};
+	private final static String TABLE = "phonenumber";
 
 	private GenericDao genericDao;
 	private ContactDao contactDao;
+
+	public PhoneNumberDaoImpl(){
+		this.genericDao= new GenericDao();
+		this.contactDao= new ContactDaoImpl();
+	}
 
 	public String[] toValues(PhoneNumber PhoneNumber) {
 		String[] values = new String[3];
 		values[0] = PhoneNumber.getPhoneKind();
 		values[1] = PhoneNumber.getPhoneNumber();
-		values[2] = PhoneNumber.getContact().getId()+"";
+		values[2] = PhoneNumber.getContactId()+"";
 		return values;
 	}
 	
@@ -29,7 +34,7 @@ public class PhoneNumberDaoImpl implements PhoneNumberDao {
 		PhoneNumber.setPhoneNumber(array[1]);
 		int id = Integer.parseInt(array[2]);
 		Contact contact = contactDao.getContactById(id);
-		PhoneNumber.setContact(contact);		
+		PhoneNumber.setcontactId(contact.getId());
 		return PhoneNumber;
 	}
 
@@ -47,10 +52,10 @@ public class PhoneNumberDaoImpl implements PhoneNumberDao {
 	}
 
 	@Override
-	public List<PhoneNumber> findAllPhoneNumber() {
+	public List<PhoneNumber> findByContactId(int contactId) {
 		List<PhoneNumber> PhoneNumbers = new ArrayList<PhoneNumber>();
 		try{
-		List<String[]> resrequest = genericDao.findAll(TABLE,fields);
+		List<String[]> resrequest = genericDao.findByAttribute(TABLE,fields,"contact",contactId+"");
 		for(String []elt: resrequest){
 			 PhoneNumbers.add(toPhoneNumber(elt));
 			 

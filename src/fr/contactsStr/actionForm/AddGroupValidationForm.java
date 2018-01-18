@@ -7,12 +7,12 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
 
-public class AddGroupForm extends ActionForm{
+public class AddGroupValidationForm extends ActionForm{
 
 
 	private String groupName;
 
-	public AddGroupForm() {
+	public AddGroupValidationForm() {
 		super();
 	}
 

@@ -11,5 +11,5 @@ public interface PhoneNumberDao {
 	public boolean deletePhoneNumber(int id);
 	public boolean updatePhoneNumber(PhoneNumber PhoneNumber);
 	public PhoneNumber getPhoneNumberById(int id);
-	public List<PhoneNumber> findAllPhoneNumber();
+	public List<PhoneNumber> findByContactId(int id);
 }

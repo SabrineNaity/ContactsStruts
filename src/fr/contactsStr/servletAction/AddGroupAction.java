@@ -8,7 +8,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import fr.contactsStr.actionForm.AddGroupForm;
+import fr.contactsStr.actionForm.AddGroupValidationForm;
 import fr.contactsStr.domain.Group;
 import fr.contactsStr.service.GroupService;
 import fr.contactsStr.service.implementation.GroupServiceImpl;
@@ -17,7 +17,7 @@ import fr.contactsStr.service.implementation.GroupServiceImpl;
 public class AddGroupAction extends Action{
 	
 	public ActionForward execute( ActionMapping pMapping,ActionForm pForm,HttpServletRequest pRequest,HttpServletResponse pResponse) {
-		AddGroupForm lForm=(AddGroupForm)pForm;
+		AddGroupValidationForm lForm=(AddGroupValidationForm)pForm;
 		Group g = new Group();
 		g.setGroupName(lForm.getGroupName());
 		GroupService gs = new GroupServiceImpl();

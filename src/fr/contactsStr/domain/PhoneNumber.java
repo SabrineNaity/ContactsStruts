@@ -1,10 +1,10 @@
 package fr.contactsStr.domain;
 
 public class PhoneNumber {
-	private long id;
+	private int id;
 	private String phoneKind;
 	private String phoneNumber;
-	private Contact contact;
+	private int contactId;
 	
 	
 	public PhoneNumber() {
@@ -12,11 +12,11 @@ public class PhoneNumber {
 	}
 
 
-	public PhoneNumber(String phoneKind, String phoneNumber, Contact contact) {
+	public PhoneNumber(String phoneKind, String phoneNumber, int contact) {
 		super();
 		this.phoneKind = phoneKind;
 		this.phoneNumber = phoneNumber;
-		this.contact = contact;
+		this.contactId = contact;
 	}
 
 
@@ -25,7 +25,7 @@ public class PhoneNumber {
 	}
 
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -50,20 +50,20 @@ public class PhoneNumber {
 	}
 
 
-	public Contact getContact() {
-		return contact;
+	public int getContactId() {
+		return contactId;
 	}
 
 
-	public void setContact(Contact contact) {
-		this.contact = contact;
+	public void setcontactId(int contact) {
+		this.contactId = contact;
 	}
 
 
 	@Override
 	public String toString() {
 		return "PhoneNumber [id=" + id + ", phoneKind=" + phoneKind + ", phoneNumber=" + phoneNumber + ", contact="
-				+ contact + "]";
+				+ contactId + "]";
 	}
 	
 	

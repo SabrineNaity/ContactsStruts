@@ -19,16 +19,15 @@ public class DeleteContactAction extends Action{
 			HttpServletResponse pResponse) {
 		
 		 
-		 
+		 DeleteContactValidationForm lform = (DeleteContactValidationForm)pForm;
+
 		 int id = Integer.parseInt(pRequest.getParameter("id"));
+		// int idbis=lform.getId();
 
 			System.out.println(id);
+	//	System.out.println(idbis);
 		// create a new Contact
 		 
-		 /*
-		ContactStrService ContactS = new ContactStrServiceImpl(new ContactStrDAOImpl());
-		String Error = ContactS.deleteContact(id);
-		*/
 		 ContactService cs = new ContactServiceImpl();
 		 boolean error = cs.deleteContact(id);
 		 System.out.println("l'erreur = : "+error);

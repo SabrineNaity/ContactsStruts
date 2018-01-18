@@ -9,7 +9,7 @@ import fr.contactsStr.domain.Group;
 public class GroupDaoImpl implements GroupDao {
 
 	String[] fields = { "groupName"};
-	private final static String TABLE = "Group";
+	private final static String TABLE = "groupe";
 
 	private GenericDao genericDao;
 

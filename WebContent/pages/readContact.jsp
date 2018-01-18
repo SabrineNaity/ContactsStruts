@@ -15,7 +15,8 @@
 <html:base/>
 </head>
 <body>
-<div class="container">
+<div class="container" action="/readContact">
+
 	<html:errors/>
 	
 	<% ArrayList<Contact> LContact = (ArrayList<Contact>)request.getAttribute("LContact");
@@ -37,15 +38,27 @@
 		<td><%= c.getLastName() %></td>
 		<td><%= c.getFirstName() %></td>
 		<td>
-		<form method="post" action="/ContactsStr/deleteContact.do" >
+		<form method="post" action="/pages/deleteContact.do" >
 		<input type="hidden" name="id" value="<%=c.getId()%>"/>
 		<input type="submit" value="delete">
 		</form>
-		
-		<form method="post" action="/ContactsStr/MoveContact.do" >
+		<form method="post" action="/moveContact.do" >
 			<input type="hidden" name="id" value="<%=c.getId()%>"/>
-			<input type="submit" value="update">	
+			<input type="submit" value="Quick update">
 		</form>
+			<form method="post" action="/moveAdress.do" >
+				<input type="hidden" name="id" value="<%=c.getId()%>"/>
+				<input type="submit" value="Adresse">
+			</form>
+			<form method="post" action="/pages/readPhoneNumber.do" >
+				<input type="hidden" name="contactId" value="<%=c.getId()%>"/>
+				<input type="submit" value="Telephones">
+			</form>
+			<form method="post" action="/moveGroups.do" >
+				<input type="hidden" name="id" value="<%=c.getId()%>"/>
+				<input type="submit" value="Ajouter a un groupe">
+			</form>
+			</form>
 		</td>
 	</tr>
 	<%}}%>

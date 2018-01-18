@@ -22,8 +22,7 @@ public class DeleteContactValidationForm extends ActionForm{
 	public void reset(ActionMapping mapping, HttpServletRequest request) {
 	  	this.id= (Integer)null;
   }
-	public ActionErrors validate( 
-		      ActionMapping mapping, HttpServletRequest request ) {
+	public ActionErrors validate(ActionMapping mapping, HttpServletRequest request ) {
 		      ActionErrors errors = new ActionErrors();
 		      
 		      if( getId()== (Integer)null || getId() < 0 ) {

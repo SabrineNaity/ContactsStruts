@@ -13,7 +13,6 @@ public class AddContactValidationForm extends ActionForm {
 	private String lastName=null;
 	private String firstName=null;
 	private String relation=null;
-	private String desc=null;
 	private String email=null;
 
 	public String getLastName() {
@@ -25,9 +24,6 @@ public class AddContactValidationForm extends ActionForm {
 	public String getEmail() {
 	    return email;
 	  }
-	public String getDesc() {
-	    return desc;
-	  }
 
 	public void setLastName(String string) {
 		lastName = string;
@@ -38,15 +34,11 @@ public class AddContactValidationForm extends ActionForm {
 	public void setEmail(String string) {
 	    email = string;
 	  }
-	public void setDesc(String string) {
-	    desc = string;
-	  }
 	
 	public void reset(ActionMapping mapping, HttpServletRequest request) {
 	  	this.lastName=null;
 	    this.firstName=null;
 	    this.relation=null;
-	    this.desc=null;
   }
 	public ActionErrors validate(
 		      ActionMapping mapping, HttpServletRequest request ) {

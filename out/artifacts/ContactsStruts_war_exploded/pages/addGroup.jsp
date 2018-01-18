@@ -13,7 +13,7 @@
 <body>
 <h1> Page de création du groupe</h1>
 <div class="container">
-   <html:form action="/AddGroup" >
+   <html:form action="/addGroup" >
 	<html:errors/>
     <p><label for="groupName">Nom du groupe</label>
     <input type="text"  name="groupName" placeholder="Nom du groupe"></p>    

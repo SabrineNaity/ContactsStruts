@@ -6,15 +6,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Quick Update</title>
 </head>
 <body>
+
+
 
 	<% Contact LeContact =  (Contact)request.getAttribute("LeContact");
 		if(LeContact==null){%>bug<br>
 	<% }else{%>
-		
-		<html:form action="/UpdateContact">
+	<h1>"Quick Update"</h1>
+		<html:form action="/pages/updateContact">
 			<input type="hidden" name="id" value="<%=LeContact.getId()%>">
 			<p><label for="lastName">Nom</label>
 			<!-- 
@@ -22,7 +24,7 @@
 			-->
     		<html:text property="lastName" styleId="lastName" value="<%=LeContact.getLastName() %>"/></p>
 
-		    <p><label for="prenom">Prénom</label>
+		    <p><label for="firstName">Prénom</label>
 		    <html:text property="firstName" styleId="firstName" value="<%=LeContact.getFirstName() %>"/></p>
 			
 			<p><label for="email">email</label>
