@@ -19,9 +19,8 @@
 		<html:form action="/pages/updateContact">
 			<input type="hidden" name="id" value="<%=LeContact.getId()%>">
 			<p><label for="lastName">Nom</label>
-			<!-- 
-			<html:hidden property="id" styleId="id" value=""/>
-			-->
+				<!--
+                -->
     		<html:text property="lastName" styleId="lastName" value="<%=LeContact.getLastName() %>"/></p>
 
 		    <p><label for="firstName">Prénom</label>

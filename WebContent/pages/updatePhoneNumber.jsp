@@ -18,13 +18,11 @@
 <html:form action="/pages/updatePhoneNumber">
     <input type="hidden" name="id" value="<%=LePhoneNumber.getId()%>">
     <p><label for="phoneKind">Type</label>
-        <!--
-			<html:hidden property="id" styleId="id" value=""/>
-			-->
-        <html:text property="phoneKind" styleId="lastName" value="<%=LePhoneNumber.getPhoneKind() %>"/></p>
 
+        <html:text property="phoneKind" styleId="phoneKind" value="<%=LePhoneNumber.getPhoneKind() %>"/></p>
     <p><label for="phoneNumber">Numéro</label>
-        <html:text property="phoneNumber" styleId="firstName" value="<%=LePhoneNumber.getPhoneNumber() %>"/></p>
+        <html:text property="phoneNumber" styleId="phoneNumber" value="<%=LePhoneNumber.getPhoneNumber() %>"/></p>
+    <input type="hidden" name="contactId" value="<%=LePhoneNumber.getContactId()%>">
 
     <input type="submit" value="modifier">
 

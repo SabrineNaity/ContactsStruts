@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1><bean:message key="label.hello"/></h1>
-<p> <a href="goToContactsCreation.do"><bean:message key="label.creation"/></a> </p>
+<p><a href="pages/goToContactsCreation.do"><bean:message key="label.creation"/></a></p>
 <p> <a href="readContact.do"><bean:message key="label.consultation"/> </p>
 </body>
 </html>

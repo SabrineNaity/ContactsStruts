@@ -1,5 +1,5 @@
-<%@page import="java.util.ArrayList"%>
 <%@page import="fr.contactsStr.domain.Contact"%>
+<%@page import="java.util.ArrayList" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -41,30 +41,31 @@
 		<form method="post" action="/pages/deleteContact.do" >
 		<input type="hidden" name="id" value="<%=c.getId()%>"/>
 		<input type="submit" value="delete">
-		</form>
-		<form method="post" action="/moveContact.do" >
+		</form></td>
+		<td><form method="post" action="/pages/moveContact.do">
 			<input type="hidden" name="id" value="<%=c.getId()%>"/>
 			<input type="submit" value="Quick update">
-		</form>
-			<form method="post" action="/moveAdress.do" >
+		</form></td>
+		<td><form method="post" action="/moveAdress.do" >
 				<input type="hidden" name="id" value="<%=c.getId()%>"/>
 				<input type="submit" value="Adresse">
-			</form>
-			<form method="post" action="/pages/readPhoneNumber.do" >
+			</form></td>
+		<td><form method="post" action="/pages/readPhoneNumber.do" >
+				<% System.out.println(c.getId());%>
 				<input type="hidden" name="contactId" value="<%=c.getId()%>"/>
 				<input type="submit" value="Telephones">
-			</form>
-			<form method="post" action="/moveGroups.do" >
+			</form></td>
+		<td><form method="post" action="pages/moveGroups.do">
 				<input type="hidden" name="id" value="<%=c.getId()%>"/>
 				<input type="submit" value="Ajouter a un groupe">
-			</form>
+			</form></td>
 			</form>
 		</td>
 	</tr>
 	<%}}%>
 	
 </table>
-
+	<p> <a href="/pages/goToContactsCreation.do"><bean:message key="label.creation"/></a> </p>
 </div>
 
 </body>

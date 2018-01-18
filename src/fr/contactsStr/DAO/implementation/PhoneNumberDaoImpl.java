@@ -10,7 +10,8 @@ import java.util.List;
 
 public class PhoneNumberDaoImpl implements PhoneNumberDao {
 
-	String[] fields = { "phoneKind", "phoneNumber", "contact"};
+
+	String[] fields = {"id", "phoneKind", "phoneNumber", "contact"};
 	private final static String TABLE = "phonenumber";
 
 	private GenericDao genericDao;
@@ -31,10 +32,12 @@ public class PhoneNumberDaoImpl implements PhoneNumberDao {
 	
 	public PhoneNumber toPhoneNumber(String[] array) {
 		PhoneNumber PhoneNumber = new PhoneNumber();
-		PhoneNumber.setPhoneKind(array[0]);
-		PhoneNumber.setPhoneNumber(array[1]);
-		int id = Integer.parseInt(array[2]);
-		Contact contact = contactDao.getContactById(id);
+		int id = Integer.parseInt(array[0]);
+		PhoneNumber.setId(id);
+		PhoneNumber.setPhoneKind(array[1]);
+		PhoneNumber.setPhoneNumber(array[2]);
+		int idContact = Integer.parseInt(array[3]);
+		Contact contact = contactDao.getContactById(idContact);
 		PhoneNumber.setcontactId(contact.getId());
 		return PhoneNumber;
 	}
@@ -97,9 +100,9 @@ public class PhoneNumberDaoImpl implements PhoneNumberDao {
 	public PhoneNumber getPhoneNumberById(int id) {
 		PhoneNumber res= new PhoneNumber();
 		String[] resrequest = null;
-		String[] fields2=null;
+
 		try {
-			resrequest = genericDao.findById(TABLE,fields2, id+"");
+			resrequest = genericDao.findById(TABLE, fields, id + "");
 			res= toPhoneNumber(resrequest);
 			return res;
 		}catch (Exception e) {

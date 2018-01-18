@@ -3,7 +3,6 @@ package fr.contactsStr.actionForm;
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.action.ActionMessage;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -12,6 +11,16 @@ public class UpdatePhoneNumberValidationForm extends ActionForm {
     private int id = 0;
     private String phoneKind = null;
     private String phoneNumber = null;
+
+    public int getContactId() {
+        return contactId;
+    }
+
+    public void setContactId(int contactId) {
+        this.contactId = contactId;
+    }
+
+    private int contactId = 0;
 
     public int getId() {
         return id;
@@ -46,9 +55,9 @@ public class UpdatePhoneNumberValidationForm extends ActionForm {
             ActionMapping mapping, HttpServletRequest request) {
         ActionErrors errors = new ActionErrors();
 
-        if (getPhoneNumber() == null || getPhoneNumber().length() < 10) {
-            errors.add("phoneNumber", new ActionMessage("creation.phoneNumber.error.required"));
-        }
+        // if (getPhoneNumber() == null || getPhoneNumber().length() < 10) {
+        //    errors.add("phoneNumber", new ActionMessage("creation.phoneNumber.error.required"));
+        // }
         return errors;
     }
 

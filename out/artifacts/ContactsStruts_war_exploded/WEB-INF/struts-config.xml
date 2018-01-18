@@ -20,6 +20,12 @@
 		<form-bean name="AddGroupValidationForm"
 		type="fr.contactsStr.actionForm.AddGroupValidationForm"/>
 
+		<form-bean name="DeleteContactValidationForm"
+				   type="fr.contactsStr.actionForm.DeleteContactValidationForm"/>
+
+		<form-bean name="DeletePhoneNumberValidationForm"
+				   type="fr.contactsStr.actionForm.DeletePhoneNumberValidationForm"/>
+
 		<form-bean name="ReadPhoneNumberValidationForm"
 				   type="fr.contactsStr.actionForm.ReadPhoneNumberValidationForm"/>
 		<form-bean name="AddPhoneNumberValidationForm"
@@ -49,16 +55,16 @@
 		<action path="/goToContactsManagement" forward="/pages/contactsManagement.jsp"/>
 
 
-		<action path="/goToContactsCreation" forward="/pages/addContact.jsp"/>
+		<action path="/pages/goToContactsCreation" forward="/pages/addContact.jsp"/>
 
 
 		<action path="/readContact"
 			type="fr.contactsStr.servletAction.ReadContactAction">
 			<forward name="success" path="/pages/readContact.jsp"/>
 		</action>
-		
+
 		<action path="/pages/moveContact"
-			type="fr.contactsStr.servletAction.MoveContactAction">
+				type="fr.contactsStr.servletAction.MoveContactAction">
 			<forward name="success" path="/pages/updateContact.jsp"/>
 		</action>
 		
@@ -75,6 +81,8 @@
 			<forward name="success" path="/readContact.do"/>
 			<forward name="error" path="/pages/error.jsp"/>
 		</action>
+
+		<!-- ========== PhoneNumber =========================== -->
 
 		<action path="/pages/goToPhoneNumbersCreation" forward="/pages/addPhoneNumber.jsp"/>
 
@@ -96,15 +104,24 @@
 				input="/pages/readContact.jsp">
 			<forward name="success"  path="/pages/readPhoneNumber.jsp"/>
 		</action>
-		<action path="pages/movePhoneNumber"
+		<action path="/pages/movePhoneNumber"
 				type="fr.contactsStr.servletAction.MovePhoneNumberAction">
 			<forward name="success" path="/pages/updatePhoneNumber.jsp"/>
 		</action>
+
+
 
 		<action path="/pages/updatePhoneNumber"
 				type="fr.contactsStr.servletAction.UpdatePhoneNumberAction"
 				name="UpdatePhoneNumberValidationForm"
 				scope="request">
+			<forward name="success" path="/pages/readPhoneNumber.do"/>
+			<forward name="error" path="/pages/error.jsp"/>
+		</action>
+
+		<action path="/pages/deletePhoneNumber"
+				type="fr.contactsStr.servletAction.DeletePhoneNumberAction"
+				name="DeletePhoneNumberValidationForm" scope="request">
 			<forward name="success" path="/pages/readPhoneNumber.do"/>
 			<forward name="error" path="/pages/error.jsp"/>
 		</action>

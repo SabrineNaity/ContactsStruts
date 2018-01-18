@@ -1,11 +1,11 @@
 package fr.contactsStr.DAO.implementation;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.Connection;
-import java.sql.Statement;
 
 public class GenericDao {
 
@@ -62,8 +62,8 @@ public class GenericDao {
 		try {
 			connexion();
 			StringBuffer sb = new StringBuffer();
-			for (int i = 0; i < fields.length; i++) {
-				sb.append(fields[i]+"='"+values[i]+"'");
+			for (int i = 1; i < fields.length; i++) {
+				sb.append(fields[i] + "='" + values[i - 1] + "'");
 				if(i<fields.length-1) sb.append(",");
 				sb.append(" ");
 			}
@@ -127,11 +127,14 @@ public class GenericDao {
 	}
 
 
+	/*
+	 * skip the first field
+	 */
 
 	private String toSqlFields(String[] fields) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("(");
-		for (int i = 0; i < fields.length; i++) {
+		for (int i = 1; i < fields.length; i++) {
 			sb.append(fields[i]);
 			if (i < fields.length - 1) {
 				sb.append(",");

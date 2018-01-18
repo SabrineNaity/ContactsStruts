@@ -1,14 +1,12 @@
 package fr.contactsStr.DAO.implementation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import fr.contactsStr.DAO.AdressDao;
 import fr.contactsStr.DAO.ContactDao;
 import fr.contactsStr.DAO.EntrepriseDao;
-import fr.contactsStr.domain.Adress;
 import fr.contactsStr.domain.Contact;
-import fr.contactsStr.domain.Entreprise;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ContactDaoImpl implements ContactDao {
@@ -23,7 +21,7 @@ public class ContactDaoImpl implements ContactDao {
 	
 	public ContactDaoImpl() {
 		super();
-		this.fields = new String[] {"firstName", "lastName","email","adress","entreprise"};
+		this.fields = new String[]{"id", "firstName", "lastName", "email", "adress", "entreprise"};
 		this.genericDao= new GenericDao();
 		}
 	
@@ -94,9 +92,8 @@ public class ContactDaoImpl implements ContactDao {
 	public List<Contact> findAllContact() {
 		List<Contact> contacts = new ArrayList<Contact>();
 
-		String[] fields2=new String[] {"id","firstName", "lastName","email","adress","entreprise"};
 		try{
-		List<String[]> resrequest = genericDao.findAll(TABLE,fields2);
+			List<String[]> resrequest = genericDao.findAll(TABLE, fields);
 		for(String []elt: resrequest){
 			 contacts.add(toContact(elt));
 		}
@@ -134,9 +131,9 @@ public class ContactDaoImpl implements ContactDao {
 	public Contact getContactById(int id) {
 		Contact res= new Contact();
 		String[] resrequest = null;
-		String[] fields2=new String[] {"id","firstName", "lastName","email","adress","entreprise"};
+
 		try {
-			resrequest = genericDao.findById(TABLE,fields2, id+"");
+			resrequest = genericDao.findById(TABLE, fields, id + "");
 			res= toContact(resrequest);
 			return res;
 		}catch (Exception e) {

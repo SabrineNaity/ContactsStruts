@@ -45,10 +45,12 @@
                 <td>
                     <form method="post" action="/pages/deletePhoneNumber.do" >
                         <input type="hidden" name="id" value="<%=p.getId()%>"/>
+                        <input type="hidden" name="contactId" value="<%=p.getContactId()%>"/>
                         <input type="submit" value="Delete">
                     </form>
                     <form method="post" action="/pages/movePhoneNumber.do">
                         <input type="hidden" name="id" value="<%=p.getId()%>"/>
+                        <input type="hidden" name="contactId" value="<%=p.getContactId()%>"/>
                         <input type="submit" value="update">
                     </form>
                     </form>
@@ -57,9 +59,9 @@
             <%}%>
             <form method="post" action="/pages/moveContactBis.do">
                 <input type="hidden" name="id" value="<%=(int)request.getAttribute("contactId")%>"/>
-                <input type="submit" value="Ajouter un telephone 2">
+                <input type="submit" value="Ajouter un telephone">
             </form>
-            <p><a href="readPhoneNumber.do"><bean:message key="label.consultationPn"/></p>
+            <p><a href="/readContact.do"><bean:message key="label.consultationPn"/></p>
             <%}%>
 
         </table>

@@ -1,16 +1,15 @@
 package fr.contactsStr.servletAction;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import fr.contactsStr.actionForm.DeleteContactValidationForm;
+import fr.contactsStr.service.ContactService;
+import fr.contactsStr.service.implementation.ContactServiceImpl;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import fr.contactsStr.actionForm.DeleteContactValidationForm;
-import fr.contactsStr.service.ContactService;
-import fr.contactsStr.service.implementation.ContactServiceImpl;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class DeleteContactAction extends Action{
 
@@ -22,13 +21,10 @@ public class DeleteContactAction extends Action{
 		 DeleteContactValidationForm lform = (DeleteContactValidationForm)pForm;
 
 		 int id = Integer.parseInt(pRequest.getParameter("id"));
-		// int idbis=lform.getId();
 
 			System.out.println(id);
-	//	System.out.println(idbis);
-		// create a new Contact
-		 
-		 ContactService cs = new ContactServiceImpl();
+
+        ContactService cs = new ContactServiceImpl();
 		 boolean error = cs.deleteContact(id);
 		 System.out.println("l'erreur = : "+error);
 		if(error) {
