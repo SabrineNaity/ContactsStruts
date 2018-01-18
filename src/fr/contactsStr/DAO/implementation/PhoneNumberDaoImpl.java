@@ -1,11 +1,12 @@
 package fr.contactsStr.DAO.implementation;
-import java.util.ArrayList;
-import java.util.List;
 
 import fr.contactsStr.DAO.ContactDao;
 import fr.contactsStr.DAO.PhoneNumberDao;
 import fr.contactsStr.domain.Contact;
 import fr.contactsStr.domain.PhoneNumber;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PhoneNumberDaoImpl implements PhoneNumberDao {
 
@@ -41,9 +42,12 @@ public class PhoneNumberDaoImpl implements PhoneNumberDao {
 	@Override
 	public PhoneNumber addPhoneNumber(PhoneNumber PhoneNumber) {
 		try {
+			System.out.println("test1");
 			String[] values = toValues(PhoneNumber);
 			int id= genericDao.insert(TABLE, fields, values);
+			System.out.println("test2");
 			PhoneNumber.setId(id);
+			System.out.println("test3");
 			return PhoneNumber;
 		} catch (Exception e) {
 			throw new RuntimeException(e);

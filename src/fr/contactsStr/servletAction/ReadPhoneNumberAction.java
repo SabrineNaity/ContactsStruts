@@ -1,8 +1,5 @@
 package fr.contactsStr.servletAction;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import fr.contactsStr.actionForm.ReadPhoneNumberValidationForm;
 import fr.contactsStr.domain.PhoneNumber;
 import fr.contactsStr.service.PhoneNumberService;
@@ -12,6 +9,8 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 
@@ -26,6 +25,7 @@ public class ReadPhoneNumberAction extends Action{
         List<PhoneNumber> LPhoneNumber = PNService.findByContactId(contactId);
 
         pRequest.setAttribute("LPhoneNumber", LPhoneNumber);
+        pRequest.setAttribute("contactId", contactId);
 
         return pMapping.findForward("success");
 

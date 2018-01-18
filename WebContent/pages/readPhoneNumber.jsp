@@ -21,6 +21,11 @@
 
         <% ArrayList<PhoneNumber> LPhoneNumber = (ArrayList<PhoneNumber>)request.getAttribute("LPhoneNumber");
             if(LPhoneNumber.size()==0){%> pas de telephones<br>
+        <form method="post" action="/pages/moveContactBis.do">
+            <input type="hidden" name="id" value="<%=(int)request.getAttribute("contactId")%>"/>
+            <input type="submit" value="Ajouter un telephone">
+        </form>
+        <p><a href="readPhoneNumber.do"><bean:message key="label.consultationPn"/></p>
         <% }else{%>
 
         <table>
@@ -49,12 +54,16 @@
                     </form>
                 </td>
             </tr>
-            <%}}%>
+            <%}%>
+            <form method="post" action="/pages/moveContactBis.do">
+                <input type="hidden" name="id" value="<%=(int)request.getAttribute("contactId")%>"/>
+                <input type="submit" value="Ajouter un telephone 2">
+            </form>
+            <p><a href="readPhoneNumber.do"><bean:message key="label.consultationPn"/></p>
+            <%}%>
 
         </table>
 
-        <p> <a href="/pages/goToPhoneNumbersCreation.do"><bean:message key="label.creationPn"/></a> </p>
-        <p> <a href="readPhoneNumber.do"><bean:message key="label.consultationPn"/> </p>
 
     </div>
 

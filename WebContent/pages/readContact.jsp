@@ -1,5 +1,5 @@
-<%@page import="java.util.ArrayList"%>
 <%@page import="fr.contactsStr.domain.Contact"%>
+<%@page import="java.util.ArrayList" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -42,7 +42,7 @@
 		<input type="hidden" name="id" value="<%=c.getId()%>"/>
 		<input type="submit" value="delete">
 		</form>
-		<form method="post" action="/moveContact.do" >
+			<form method="post" action="/pages/moveContact.do">
 			<input type="hidden" name="id" value="<%=c.getId()%>"/>
 			<input type="submit" value="Quick update">
 		</form>
@@ -51,10 +51,11 @@
 				<input type="submit" value="Adresse">
 			</form>
 			<form method="post" action="/pages/readPhoneNumber.do" >
+				<% System.out.println(c.getId());%>
 				<input type="hidden" name="contactId" value="<%=c.getId()%>"/>
 				<input type="submit" value="Telephones">
 			</form>
-			<form method="post" action="/moveGroups.do" >
+			<form method="post" action="pages/moveGroups.do">
 				<input type="hidden" name="id" value="<%=c.getId()%>"/>
 				<input type="submit" value="Ajouter a un groupe">
 			</form>

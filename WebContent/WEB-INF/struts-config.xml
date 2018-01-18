@@ -56,9 +56,9 @@
 			type="fr.contactsStr.servletAction.ReadContactAction">
 			<forward name="success" path="/pages/readContact.jsp"/>
 		</action>
-		
-		<action path="/moveContact"
-			type="fr.contactsStr.servletAction.MoveContactAction">
+
+		<action path="/pages/moveContact"
+				type="fr.contactsStr.servletAction.MoveContactAction">
 			<forward name="success" path="/pages/updateContact.jsp"/>
 		</action>
 		
@@ -86,6 +86,10 @@
 			<forward name="error" path="/pages/error.jsp"/>
 		</action>
 
+		<action path="/pages/moveContactBis"
+				type="fr.contactsStr.servletAction.MoveContactAction">
+			<forward name="success" path="/pages/addPhoneNumber.jsp"/>
+		</action>
 		<action path="/pages/readPhoneNumber"
 				type="fr.contactsStr.servletAction.ReadPhoneNumberAction"
 				name="ReadPhoneNumberValidationForm" scope="request"

@@ -14,8 +14,10 @@ public class ReadPhoneNumberValidationForm extends ActionForm {
         this.contactId = contactId;
     }
     public int getContactId() {
+        System.out.println(contactId);
 
         return contactId;
+
     }
 
     public void reset(ActionMapping mapping, HttpServletRequest request) {
@@ -26,7 +28,7 @@ public class ReadPhoneNumberValidationForm extends ActionForm {
         ActionErrors errors = new ActionErrors();
 
         if( getContactId()== 0) {
-            errors.add("contactID",new ActionMessage("contact.id.error.required"));
+            errors.add("contactId", new ActionMessage("contact.id.error.required"));
         }
         return errors;
     }
