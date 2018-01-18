@@ -1,6 +1,5 @@
-<%@page import="java.util.ArrayList"%>
-<%@page import="fr.contactsStr.domain.Contact"%>
 <%@page import="fr.contactsStr.domain.PhoneNumber"%>
+<%@page import="java.util.ArrayList" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
@@ -43,7 +42,7 @@
                         <input type="hidden" name="id" value="<%=p.getId()%>"/>
                         <input type="submit" value="Delete">
                     </form>
-                    <form method="post" action="/movePhoneNumber.do" >
+                    <form method="post" action="/pages/movePhoneNumber.do">
                         <input type="hidden" name="id" value="<%=p.getId()%>"/>
                         <input type="submit" value="update">
                     </form>

@@ -7,69 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfe8e2cb-46fc-4124-9d69-06750254e1b1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/addPhoneNumber.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/contactsManagement.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/groupsManagement.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/readGroup.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddPhoneNumberValidationForm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/ReadPhoneNumberValidationForm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/AddPhoneNumberAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/ReadGroupAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/ReadPhoneNumberAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebContent/pages/updatePhoneNumber.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdatePhoneNumberValidationForm.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/MovePhoneNumberAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdatePhoneNumberAction.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ContactsStruts.iml" afterPath="$PROJECT_DIR$/ContactsStruts.iml" />
       <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" />
-      <change beforePath="$PROJECT_DIR$/WebContent/pages/addContact.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/addContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebContent/pages/addGroup.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/addGroup.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebContent/pages/main.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebContent/pages/readContact.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/readContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebContent/pages/updateContact.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/updateContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/Resources.properties" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/Resources.properties" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/PhoneNumberDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/PhoneNumberDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/GenericDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/GenericDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/GroupDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/GroupDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/actionForm/AddGroupForm.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/actionForm/DeleteContactValidationForm.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/actionForm/DeleteContactValidationForm.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/domain/PhoneNumber.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/domain/PhoneNumber.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/service/PhoneNumberService.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/service/PhoneNumberService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/servletAction/AddGroupAction.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/servletAction/AddGroupAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/servletAction/DeleteContactAction.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/servletAction/DeleteContactAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/struts-config.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/addContact.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/addContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/addGroup.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/addGroup.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/main.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/readContact.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/readContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/updateContact.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/pages/updateContact.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/Resources.properties" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/Resources.properties" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/PhoneNumberDao.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/PhoneNumberDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/GenericDao.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/GenericDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/GroupDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/GroupDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/actionForm/AddGroupForm.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/actionForm/DeleteContactValidationForm.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/actionForm/DeleteContactValidationForm.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/domain/PhoneNumber.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/domain/PhoneNumber.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/service/PhoneNumberService.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/service/PhoneNumberService.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/servletAction/AddGroupAction.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/servletAction/AddGroupAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/servletAction/DeleteContactAction.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/servletAction/DeleteContactAction.class" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp" afterPath="$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/actionForm/AddContactValidationForm.class" afterPath="$PROJECT_DIR$/out/artifacts/ContactsStruts_war_exploded/WEB-INF/classes/fr/contactsStr/actionForm/AddContactValidationForm.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/actionForm/AddContactValidationForm.class" afterPath="$PROJECT_DIR$/out/production/ContactsStruts/fr/contactsStr/actionForm/AddContactValidationForm.class" />
       <change beforePath="$PROJECT_DIR$/src/Resources.properties" afterPath="$PROJECT_DIR$/src/Resources.properties" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/DAO/PhoneNumberDao.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/DAO/PhoneNumberDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/GenericDao.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/GenericDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/GroupDaoImpl.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/GroupDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddContactValidationForm.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddContactValidationForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddGroupForm.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddGroupValidationForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/DeleteContactValidationForm.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/actionForm/DeleteContactValidationForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/domain/PhoneNumber.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/domain/PhoneNumber.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/service/PhoneNumberService.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/service/PhoneNumberService.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/service/implementation/PhoneNumberServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/AddGroupAction.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/AddGroupAction.java" />
-      <change beforePath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/DeleteContactAction.java" afterPath="$PROJECT_DIR$/src/fr/contactsStr/servletAction/DeleteContactAction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,11 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddContactAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/AddContactAction.java">
+      <file leaf-file-name="Resources.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resources.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="72" />
+            <state relative-caret-position="245">
+              <caret line="25" column="82" lean-forward="false" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoveContactAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/MoveContactAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -97,47 +54,94 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+            <state relative-caret-position="69">
+              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPhoneNumberValidationForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddPhoneNumberValidationForm.java">
+      <file leaf-file-name="UpdatePhoneNumberAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdatePhoneNumberAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            <state relative-caret-position="215">
+              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addPhoneNumber.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/pages/addPhoneNumber.jsp">
+      <file leaf-file-name="UpdatePhoneNumberValidationForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdatePhoneNumberValidationForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="72">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateContactValidationForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdateContactValidationForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="51" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneNumberDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.java">
+      <file leaf-file-name="UpdateContactAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdateContactAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            <state relative-caret-position="216">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatePhoneNumber.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/pages/updatePhoneNumber.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateContact.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/pages/updateContact.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovePhoneNumberAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/MovePhoneNumberAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -193,14 +197,18 @@
         <option value="$PROJECT_DIR$/src/fr/contactsStr/actionForm/ReadPhoneNumberValidationForm.java" />
         <option value="$PROJECT_DIR$/src/fr/contactsStr/servletAction/ReadPhoneNumberAction.java" />
         <option value="$PROJECT_DIR$/WebContent/pages/readContact.jsp" />
-        <option value="$PROJECT_DIR$/src/Resources.properties" />
         <option value="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddPhoneNumberValidationForm.java" />
         <option value="$PROJECT_DIR$/src/fr/contactsStr/servletAction/AddPhoneNumberAction.java" />
-        <option value="$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp" />
         <option value="$PROJECT_DIR$/WebContent/pages/addPhoneNumber.jsp" />
         <option value="$PROJECT_DIR$/src/fr/contactsStr/actionForm/AddContactValidationForm.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/fr/contactsStr/DAO/implementation/PhoneNumberDaoImpl.java" />
+        <option value="$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp" />
+        <option value="$PROJECT_DIR$/src/fr/contactsStr/servletAction/MovePhoneNumberAction.java" />
+        <option value="$PROJECT_DIR$/WebContent/pages/updatePhoneNumber.jsp" />
+        <option value="$PROJECT_DIR$/src/Resources.properties" />
+        <option value="$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdatePhoneNumberValidationForm.java" />
+        <option value="$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdatePhoneNumberAction.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml" />
       </list>
     </option>
   </component>
@@ -222,6 +230,9 @@
     <option name="y" value="-4" />
     <option name="width" value="777" />
     <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -259,28 +270,6 @@
               <item name="ContactsStruts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="contactsStr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ContactsStruts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ContactsStruts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contactsStr" type="462c0819:PsiDirectoryNode" />
-              <item name="actionForm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ContactsStruts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ContactsStruts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contactsStr" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ContactsStruts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ContactsStruts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contactsStr" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-              <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ContactsStruts" type="b2602c69:ProjectViewProjectNode" />
@@ -501,12 +490,20 @@
       <workItem from="1516099590743" duration="279000" />
       <workItem from="1516106027090" duration="5735000" />
       <workItem from="1516195270270" duration="1671000" />
-      <workItem from="1516201472133" duration="31013000" />
+      <workItem from="1516201472133" duration="32917000" />
     </task>
+    <task id="LOCAL-00001" summary="Second Commit">
+      <created>1516239010039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516239010039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38698000" />
+    <option name="totallyTimeSpent" value="40602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -533,7 +530,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4249249" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27132976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -569,7 +566,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15315315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4249249" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -583,6 +580,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -599,38 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebContent/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/DAO/ContactDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html" />
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/MoveContactAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -795,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/updateContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="95" lean-forward="false" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/service/PhoneNumberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -907,26 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/pages/contactsManagement.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -950,14 +895,6 @@
             <element signature="e#591#592#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdateContactValidationForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,13 +967,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/readPhoneNumber.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/MovePhoneNumberAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/updateContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/updatePhoneNumber.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/MoveContactAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdateContactAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdateContactValidationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="82" lean-forward="false" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/actionForm/UpdatePhoneNumberValidationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/contactsStr/servletAction/UpdatePhoneNumberAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/struts-config.xml">
       <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+        <state relative-caret-position="69">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
           <folding />
         </state>
       </provider>
